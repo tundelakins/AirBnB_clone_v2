@@ -14,7 +14,7 @@ class FileStorage:
             return self.__objects
         cls_name = cls.__name__
         dct = {}
-[2;2R[>77;30502;0c]10;rgb:bfbf/bfbf/bfbf]11;rgb:0000/0000/0000        for key in self.__objects.keys():
+        for key in self.__objects.keys():
             if key.split('.')[0] == cls_name:
                 dct[key] = self.__objects[key]
         return dct
